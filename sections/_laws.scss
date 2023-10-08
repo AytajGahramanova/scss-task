@@ -1,0 +1,60 @@
+.laws{
+    .laws-wrapper{
+        display: flex;
+        gap: 40px;
+        position: absolute;
+        bottom: 35%;
+        .card{
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            width: 30%;
+            padding: 10px;
+            background-color: $whiteColor;
+            .icon{
+                width: 40px;
+               & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                color: $mainColor;
+                }
+            }
+            h3{
+                color: $mainColor;
+            }
+            p{
+                color: $primaryColor;
+                max-width: 250px;
+                line-height: 1.3;
+                margin-top: 10px;
+            }
+            &:last-child{
+                background-color: #176B87;
+            }
+            .second-title{
+                @media (min-width:768px){
+                    display: none;
+                }
+                @media (max-width:768px){
+                    display: flex;
+                }
+            }
+            .first-title{
+                @media (min-width:768px){
+                    display: flex;
+                }
+                @media (max-width:768px){
+                    display: none;
+                }
+            }
+        }
+        .card-padding{
+            padding: 20px;
+        }
+        @media (max-width:768px){
+           @include flexBox();
+            bottom: 0;
+            top: 135%;
+            width: 100%;
+        }
+    }
+}

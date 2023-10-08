@@ -1,0 +1,29 @@
+.main-footer {
+  background-color: #1f4172;
+  margin-top: 30px;
+  padding: 20px;
+  .footer-links {
+    display: flex;
+    color: $whiteColor;
+    h3 {
+      margin: 10px;
+    }
+    a {
+      color: $whiteColor;
+      margin: 10px;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      margin: 30px;
+      i {
+        margin-right: 10px;
+        font-size: 18px;
+        color: deepskyblue;
+      }
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}
